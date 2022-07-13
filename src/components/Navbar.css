@@ -1,0 +1,29 @@
+.title{
+    display: inline-block;
+    padding: 10px;
+}
+.navbar{
+    background-color: rgb(147, 112, 212);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.navElements{
+    display: flex;
+}
+.navMenus ul{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    /* position: absolute; */
+
+}
+.navMenus ul li{
+    padding: 10px 5px;
+}
+.search{
+    padding: 10px 0px;
+    position: absolute;
+    right: 50px;
+    /* padding-left: 200px; */
+}

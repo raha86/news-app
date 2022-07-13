@@ -1,0 +1,34 @@
+.card{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}
+.card:hover{
+    background-color: rgb(226, 226, 229);
+    cursor: pointer;
+}
+.imgCont{
+    overflow: hidden;
+}
+.imgCont img{
+    width: 320px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card:hover img{
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+}
+.details{
+    padding: 10px;
+}
+.newsTitle{
+    margin-bottom: 8px;
+}
+.newsDesc{
+    margin-bottom: 16px;
+}

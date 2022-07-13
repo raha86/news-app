@@ -1,0 +1,11 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.newsCont{
+  width: 70%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}

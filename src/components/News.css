@@ -1,0 +1,8 @@
+.pageHeading{
+    padding: 30px 0;
+    text-align: center;
+}
+.newsItemCont{
+    display: flex;
+    flex-wrap: wrap;
+}
