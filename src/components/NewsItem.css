@@ -9,6 +9,7 @@
 .card:hover{
     background-color: rgb(226, 226, 229);
     cursor: pointer;
+    transition: .15s ease-in-out;
 }
 .imgCont{
     overflow: hidden;
@@ -28,7 +29,19 @@
 }
 .newsTitle{
     margin-bottom: 8px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 .newsDesc{
     margin-bottom: 16px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.time{
+    font-size: 13px;
+    color: rgb(139, 134, 134);
+}
+.source{
+    color: rgb(107, 102, 114);
+    font-family: 'Prompt', sans-serif;
 }

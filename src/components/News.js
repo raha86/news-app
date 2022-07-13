@@ -52,7 +52,7 @@ export default function News(props) {
               {articles.map(element=>{
                 pageSize = pageSize + 1;
                 return <a href={element.url}>
-                  <NewsItem key={element.url} title={element.title} desc={element.description} source={element.source.name} imgUrl={element.urlToImage}/>
+                  <NewsItem key={element.url} title={element.title} desc={element.description} source={element.source.name} imgUrl={element.urlToImage} publishedAt={element.publishedAt}/>
                   </a>
               })}
             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import './NewsItem.css'
 
 export default function NewsItem(props) {
-  let {title, desc, source, imgUrl} = props;
+  let {title, desc, source, imgUrl, publishedAt} = props;
   return (
     <div className='card'>
         <div className="imgCont">
@@ -11,9 +11,8 @@ export default function NewsItem(props) {
         <div className="details">
             <h3 className="newsTitle">{title}</h3>
             <p className="newsDesc">{desc}</p>
+            <p className='time'>{publishedAt.substring(0,10)} at {publishedAt.substring(11,19)}</p>
             <p className="source">{source}</p>
-            <p className="author">author</p>
-            <p className='time'>2022-06-29T15:34:00Z"</p>
         </div>
     </div>
   )
