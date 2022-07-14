@@ -1,0 +1,7 @@
+.topLoadingBar{
+    height: 3px;
+    position:absolute;
+    z-index: 10;
+    background-color: rgb(21, 186, 241);  
+    /* transition: 500ms ease-in; */
+}

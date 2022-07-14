@@ -3,7 +3,8 @@
     padding: 10px;
 }
 .navbar{
-    background-color: rgb(147, 112, 212);
+    background-color: rgb(118, 50, 244);
+    /* background-color: rgb(147, 112, 212); */
     position: sticky;
     top: 0;
     z-index: 5;

@@ -9,6 +9,8 @@ export default function News(props) {
   const [articles, setArticles] = useState([]);
   const [pageNo, setPageNo] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
+  const [loading, setLoading] = useState(true);
+  
 
   News.defaultProps = {
     category: "general",
@@ -18,11 +20,17 @@ export default function News(props) {
   let pageSize = 0;
 
   const updateNews = async () =>{
+    props.setProgress("30%")
     const url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=${props.apiKey}&page=${pageNo}`;
+    setLoading(true);
     let data = await fetch(url);
+    props.setProgress("70%")
     let parsedData = await data.json();
     setArticles(parsedData.articles);
     setTotalResults(parsedData.totalResults);
+    setLoading(false);
+    props.setProgress("100%")
+    props.setProgress("0%")
   }
 
   useEffect(() => {
